@@ -25,7 +25,7 @@ if not os.path.exists(DATA_FILE):
 def start(message):
     chat_id = message.chat.id
     users[chat_id] = {}
-    bot.send_message(chat_id, "👋 Assalomu alaykum!\nQo‘mondonga murojaat botiga xush kelibsiz.")
+    bot.send_message(chat_id, "👋 Assalomu alaykum!\nMudofaa Vaziriga murojaat botiga xush kelibsiz.")
     bot.send_message(chat_id, "🧍‍♂️ Ism, familiya, otangiz ismini kiriting:")
     bot.register_next_step_handler(message, get_name)
 
